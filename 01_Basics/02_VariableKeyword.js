@@ -22,12 +22,7 @@ someValue = 456;
 /* Note
  - While declaring a constant value use const
  - while declaring a variable use let instead of var as var have block and functional scoping issues, creating more issues in code
-- 
-
-
-
-
- 
+- when just declaring the variable but not assigning its value creates a variable with value undefined 
  */
 
   
