@@ -1,0 +1,1 @@
+// Try to avoid tricky conversions at any cost, maintaining th clean code
