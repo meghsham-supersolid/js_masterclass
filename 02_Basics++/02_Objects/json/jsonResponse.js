@@ -26,4 +26,5 @@ or
     }
 ]
 
+while handiling this responses the we should always handle the type and null checking as JS will not perform to unless explicitly done by coders.
 */
