@@ -32,5 +32,6 @@ console.log(
   `Using toUpperCase() we can convert all letter to upper case only ${str.toUpperCase()}`
 );
 
-console.log(`indexOf() gives the first occurrence of given string ${str.indexOf('zzz')}`);
-
+console.log(
+  `indexOf() gives the first occurrence of given string ${str.indexOf("zzz")}`
+);
