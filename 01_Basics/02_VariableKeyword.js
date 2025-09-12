@@ -1,5 +1,5 @@
 // using const
-const piConstant = 3.14;
+const PI = 3.14;
 // they are used to define values that does not change once defined
 // redeclaration and reassigning of value is not allowed in constant
 
@@ -24,5 +24,3 @@ someValue = 456;
  - while declaring a variable use let instead of var as var have block and functional scoping issues, creating more issues in code
 - when just declaring the variable but not assigning its value creates a variable with value undefined 
  */
-
-  

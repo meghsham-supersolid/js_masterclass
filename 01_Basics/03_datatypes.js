@@ -6,19 +6,21 @@
 
 2. BigInt: handles extremely large integers that exceed the precision limits of the Number type.
 
- in most of the cases Number will used
+ Note: In most of the cases only Number will used
 
-3. Strings : Strings are useful for holding data that can be represented in text form.  JS strings are primitive and immutable means All string methods produce a new string without altering the original string.
- Strings can be created using:
- Single quotes: 'Hello, World!'
- Double quotes: "Hello, World!"
- Backticks (template literals): `` Hello, World! ``
+3. Strings : 
+    - Strings are useful for holding data that can be represented in text form.  
+    - JS strings are primitive and immutable means All string methods produce a new string without altering the original string.
+    - Strings can be created using:
+        - Single quotes: 'Hello, World!'
+        - Double quotes: "Hello, World!"
+        - Backticks (template literals): `` Hello, World! ``
 
 4. Boolean : represent either true or false, used for conditional checking
 
-5. null : is standalone value and a data type which represents a  value that intentionally kept empty
+5. null : is standalone value and of data type object which represents a value that intentionally kept empty
 
-6.undefined is keyword which represent absence of value which means value is not defined yet but might be available in future.
+6. undefined : is a value of type undefined which represents absence of value which might be available in future.
  note that, you may use null as value but undefined is always given by js
 
 7. Symbol : represent value that is unique, used in react
@@ -30,11 +32,13 @@
     const B = A;
     console.log(A===B);
 
-    Symbol is only true if the object its pointing to is same
+A Symbol is only equal to itself, unless retrieved via Symbol.for(), which uses a global registry.
 
-    ## Verify above ##
-Object typeof is operator used to check the typeof things
- */
+Symbol.for() : JavaScript has a global symbol registry. When you use Symbol.for(key), it checks if a symbol with that key already exists in the global registry. If yes, it returns that symbol. If not, it creates a new one and stores it under that key.
+
+The typeof is operator used to check the typeof things
+
+*/
 // let number = 123456;
 // let name = "Meghsham";
 
@@ -42,15 +46,12 @@ Object typeof is operator used to check the typeof things
 // console.log(typeof name);
 
 /*
+
 Referenced Types : 
     with this type variable point toward the memory location rather than value itself
         1. Arrays
         2. Objects
         3. Functions  
-
-
-        # Function object in js research about it
-
 */
 
 let wholeNumberValue = 123;

@@ -1,4 +1,4 @@
-//  Converting values in JS is simple yet can create mishaps as it does not give error while doing invalid conversions, but when use this invalid value generated it may crash the program as JS have type specific functions
+//  Converting values in JS is simple yet can creates mishaps as it does not give error while doing invalid conversions, but when use this invalid value generated it may crash the program as JS have type specific functions
 
 let a = "101";
 // this a number wrapped in string which can converted to a number

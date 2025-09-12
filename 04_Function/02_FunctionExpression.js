@@ -49,3 +49,33 @@ console.log();
 const functionContainerMinusFive = function minusFive(num) {
   return num - 5;
 };
+
+// Doubt : Can we call the a fucntion which is defined under function expression 
+
+const sayHello1 = function greet () {
+    console.log("Hello!!");
+    
+}
+
+sayHello1();
+
+greet();  // ReferenceError: greet is not defined
+
+// BTS : function greet() inside a function expression is not available outside the function body.
+
+
+//Doubt : how to call a name function
+
+let isGreetCalled = false;
+
+const sayHello2 = function greet () {
+    console.log("Hello!!");
+    if (!isGreetCalled){
+        greet ();
+        isGreetCalled = true;
+    }
+
+}
+
+sayHello2();
+

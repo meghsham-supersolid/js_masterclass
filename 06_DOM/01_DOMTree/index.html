@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Learning</title>
+  </head>
+  <body>
+    <bg-black>
+      <h1 class="heading" id="heading-text">Heading Text 1</h1>
+      <p class="text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, sequi.
+      </p>
+
+      <p id="someText">Lorem ipsum dolor sit amet.<span style="display: none;">Lorem, ipsum.</p>
+    </bg-black>
+  </body>
+</html>
+
+<!-- 
+
+DOM : Document object model is tree that represent HTML / XML document in hierarchical model
+
+When a web page load in a browser, the browser create a tree like structure, where each part of the document is represented as tree.
+
+The DOM provides a programming interface (API) that allows scripting languages like JavaScript to access, manipulate, and modify the content, structure, and style of a web page dynamically. This enables interactive web experiences, such as changing text, adding or removing elements, responding to user events, and much more.
+
+For Example document object model for above : 
+
+Document
+│
+├── html
+│   ├── head
+│   │   ├── meta (charset="UTF-8")
+│   │   ├── meta (name="viewport", content="width=device-width, initial-scale=1.0")
+│   │   └── title
+│   │       └── "Dom Learning"
+│   │
+│   └── body
+│       └── bg-black (⚠️ Invalid tag — not standard HTML)
+│           ├── h1 (class="heading")
+│           │   └── "Heading Text"
+│           │
+│           └── p (class="text")
+│               └── "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, sequi."
+-->
