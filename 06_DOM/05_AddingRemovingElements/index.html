@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding & Removing DOM Elements</title>
+    <style>
+      * {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="task-list">
+      <li class="task">Reading more books</li>
+      <li class="task">Jounling</li>
+      <li class="task">Eating Helthy</li>
+    </ul>
+  </body>
+
+  <script>
+    function addTask(task) {
+      const newListItem = document.createElement("li");
+      newListItem.innerHTML = `${task}`;
+
+      const taskList = document.querySelector(".task-list");
+      taskList.appendChild(newListItem);
+    }
+
+    addTask("Elemincating Distractions");
+    addTask("Cultivating a stronger sense of self");
+
+    // altough above approch worksm but to do that it traverse through all of DOM tree
+    // to optimize this we can use below apporch
+
+    function addTaskV2(task) {
+      const newListItem = document.createElement("li");
+      newListItem.appendChild(document.createTextNode(task));
+      document.querySelector(".task-list").appendChild(newListItem);
+    }
+
+    addTaskV2("No Fap");
+  </script>
+</html>
