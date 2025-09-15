@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  margin: 5px;
+  color: white;
+}
+body {
+  background-color: black;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-parent {
+  border: 2px solid blanchedalmond;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+}
+
+.buttons {
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#startBtn {
+  background-color: darkgreen;
+}
+
+#stopBtn {
+  background-color: red;
+}
+
+.time-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
