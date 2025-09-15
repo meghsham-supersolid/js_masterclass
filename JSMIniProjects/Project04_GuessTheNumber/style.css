@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightsteelblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+}
+
+.ui-box {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ui-box-1 {
+  width: 40%;
+  background-color: blue;
+  color: skyblue;
+  border: 5px solid darkblue;
+}
+
+#ui-box-1 {
+  font-family: Verdana, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#ui-box-2 {
+  width: 60%;
+  background-color: skyblue;
+  color: black;
+  border: 5px solid darkblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#input-error-string {
+  color: red;
+}
