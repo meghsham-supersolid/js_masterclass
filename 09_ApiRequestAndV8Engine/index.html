@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="json-response-data"><h1>Data is not loaded yet</h1></div>
+  </body>
+  <script>
+    const jsonData = document.querySelector("#json-response-data");
+
+    // 1. Create object of XMLHttpRequest
+    const xhr = new XMLHttpRequest();
+
+    xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
+
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        const jsonResponse = JSON.parse(xhr.responseText);
+
+        // console.log(typeof jsonResponse);
+
+        for (const obj of jsonResponse) {
+          for (const prop of Object.keys(obj)) {
+            console.log(`${prop} => ${obj[prop]}`);
+          }
+          console.log(
+            "=============================================================================="
+          );
+        }
+
+        // for (const obj of jsonResponse) {
+        //   for (const prop of Object.keys(obj)) {
+        //     console.log(`${prop} => ${obj[prop]}`);
+        //   }
+        // }
+      } else if (xhr.readyState === 3 && xhr.status === 404) {
+        console.log("xhr.readyState=>" + xhr.readyState);
+        console.log("xhr.status=>" + xhr.status);
+        jsonData.innerHTML = "<h1>Resources not found</h1>";
+      }
+    };
+
+    xhr.send();
+  </script>
+</html>
